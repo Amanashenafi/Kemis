@@ -5,6 +5,6 @@ FactoryBot.define do
     color { Faker::Lorem.word }
     size { 1 }
     price { 1.5 }
-    quantity { 15 }
+    quantity { 10 }
   end
 end

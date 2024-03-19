@@ -27,7 +27,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_13_062607) do
   create_table "dress_transactions", force: :cascade do |t|
     t.datetime "date_time", null: false
     t.bigint "customer_id", null: false
-    t.integer "status", null: false
+    t.integer "status", default: 0, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["customer_id"], name: "index_dress_transactions_on_customer_id"
@@ -46,7 +46,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_13_062607) do
 
   create_table "sold_dresses", force: :cascade do |t|
     t.bigint "dress_id", null: false
-    t.integer "quantity_sold"
+    t.integer "quantity", null: false
     t.bigint "dress_transaction_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

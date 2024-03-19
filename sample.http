@@ -3,8 +3,8 @@
 
 # { 
 #     "customer": {
-#         "firstName":"Alex",
-#         "lastName":"Bedada",
+#         "firstName":"Valentina",
+#         "lastName":"Nappi",
 #         "phoneNumber": "251-9217-27-36",
 #         "email": "aegon0355@gmail.com" 
 #     }
@@ -12,23 +12,43 @@
 #create
 
 # GET http://localhost:3000/customers HTTP/1.1
-#index
+# index
 
 
 # GET http://localhost:3000/customers/1 HTTP/1.1
-#show
+# show
 
 # PUT http://localhost:3000/customers/1 HTTP/1.1
 # content-type: application/json
 
 # { 
 #     "customer": {
-#         "firstName":"Chala" 
+#         "firstName":"Armani", 
+#         "lastName": "Black"
 #     }
 # }
-#update
+# update
 
-GET http://localhost:3000/dress_transactions HTTP/1.1
+# GET http://localhost:3000/dress_transactions HTTP/1.1
+# index
+
+
+POST http://localhost:3000/dress_transactions HTTP/1.1
+content-type: application/json
+
+{
+    "dress_transaction":{
+        "date_time":"2024-03-18T08:41:32.323Z",
+        "status": "pending",
+        "customer_id":1
+    }
+}
+#create
+
+
+
+
+
 
 
 
