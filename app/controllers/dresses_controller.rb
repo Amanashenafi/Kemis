@@ -36,7 +36,7 @@ class DressesController < ApplicationController
 
   private
     def model_params
-      params.require(:dress).permit(:id, :name, :category, :color, :size, :price, :quantity)
+      params.require(:dress).permit(:id, :name, :category, :color, :size, :price, :quantity, :img_url)
     end
 
 

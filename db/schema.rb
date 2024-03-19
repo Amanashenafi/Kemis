@@ -40,6 +40,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_13_062607) do
     t.integer "size", null: false
     t.float "price", null: false
     t.integer "quantity", null: false
+    t.string "img_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -9,14 +9,14 @@ RSpec.describe "Dresses", type: :request do
       result = JSON(response.body)
       expect(result.count).to eq 3
     end
-    it "displays only id, name, category, color, size, price and quantity of a dress" do
+    it "displays only id, name, category, color, size, price, quantity and img_url of a dress" do
       create(:dress)
       get dresses_url
       result = JSON(response.body)
-      expect(result[0].count).to eq 7
+      expect(result[0].count).to eq 8
       expect(result[0].keys).to match_array [
         "id","name", "category", "color",
-        "size", "price", "quantity"
+        "size", "price", "quantity", "img_url"
       ]
     end
   end
@@ -33,6 +33,7 @@ RSpec.describe "Dresses", type: :request do
       expect(result["size"]).to eq dress.size
       expect(result["price"]).to eq dress.price
       expect(result["quantity"]).to eq dress.quantity
+      expect(result["img_url"]).to eq dress.img_url
 
     end
   end
