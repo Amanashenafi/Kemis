@@ -4,6 +4,7 @@
 # or operating system, you probably want to add a global ignore instead:
 #   git config --global core.excludesfile '~/.gitignore_global'
 
+
 # Ignore bundler config.
 /.bundle
 
@@ -31,3 +32,12 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+node_modules/.bin/acorn
+/node_modules
+node_modules/.bin/acorn
+node_modules/.bin/acorn
+node_modules/.bin/acorn
+node_modules/.bin/acorn
+node_modules/@rails/webpacker/package/__tests__/test.js
+/node_modules
+/node_modules
