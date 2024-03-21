@@ -1,12 +1,15 @@
 source "https://rubygems.org"
 
-ruby "3.2.2"
+ruby "3.1.4"
 
 
 gem "rails", "~> 7.1.3"
 
 
 gem "pg", "~> 1.1"
+
+
+gem 'rack-cors'
 
 
 gem "puma", ">= 5.0"
